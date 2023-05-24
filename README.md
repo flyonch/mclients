@@ -16,7 +16,7 @@ ObjectMapper
 Rideau
 RxSwift
 node-js server + bd psql + docker-compose (установка отдельным проектом).
-[ссылка на проект node js]
+nodejs server - https://github.com/flyonch/mclientapi
 
 Установка и запуск
 Склонируйте репозиторий на ваше устройство.
