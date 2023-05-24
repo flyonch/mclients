@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAppointmentVC" customModule="MyClient" customModuleProvider="target">
+            <connections>
+                <outlet property="mainLabel" destination="a40-Hl-9RB" id="ciA-pD-J1n"/>
+                <outlet property="priceLabel" destination="Off-80-KV1" id="sPT-K5-XIe"/>
+                <outlet property="selectDateBtn" destination="fVe-dt-7eP" id="pCH-ga-9TK"/>
+                <outlet property="selectMasterBtn" destination="O7T-fI-lov" id="Hjw-hn-XHJ"/>
+                <outlet property="selectNext" destination="ObH-Rr-L8E" id="yxP-XJ-ASe"/>
+                <outlet property="typeServiceBtn" destination="Vd1-8Z-zKw" id="7ty-fW-hhy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBtn" destination="wdj-Kb-txQ" id="RXv-1y-nen"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle 195" translatesAutoresizingMaskIntoConstraints="NO" id="EjO-xx-Ylm">
+                    <rect key="frame" x="0.0" y="59" width="393" height="315"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Массаж " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a40-Hl-9RB">
+                    <rect key="frame" x="16" y="382" width="361" height="65"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-8Z-zKw">
+                    <rect key="frame" x="16" y="459" width="365" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="1a1-P5-268"/>
+                        <constraint firstAttribute="width" constant="365" id="1bJ-6F-7dW"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="checkmark.circle" catalog="system" title="Выберите тип сервиса" imagePadding="10">
+                        <backgroundConfiguration key="background" cornerRadius="12" strokeWidth="1">
+                            <color key="backgroundColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" red="0.19192156199999999" green="0.23155710099999999" blue="0.23231044410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="selectTypeServiceAction:" destination="-1" eventType="touchUpInside" id="FEh-3R-9gk"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdj-Kb-txQ">
+                    <rect key="frame" x="0.0" y="738" width="393" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObH-Rr-L8E">
+                            <rect key="frame" x="8" y="8" width="377" height="64"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Продолжить">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="backgroundColor" red="0.090539552270000004" green="0.36123856900000001" blue="0.29705888029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="nextActionBtn:" destination="-1" eventType="touchUpInside" id="bYV-T1-ylq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88749629259999996" green="0.96181303259999995" blue="0.98150569200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ObH-Rr-L8E" firstAttribute="leading" secondItem="wdj-Kb-txQ" secondAttribute="leading" constant="8" id="NB0-P4-uhC"/>
+                        <constraint firstAttribute="height" constant="80" id="NIe-eq-dI4"/>
+                        <constraint firstItem="ObH-Rr-L8E" firstAttribute="top" secondItem="wdj-Kb-txQ" secondAttribute="top" constant="8" id="X6R-eB-cZo"/>
+                        <constraint firstAttribute="bottom" secondItem="ObH-Rr-L8E" secondAttribute="bottom" constant="8" id="bQp-9y-qHY"/>
+                        <constraint firstAttribute="trailing" secondItem="ObH-Rr-L8E" secondAttribute="trailing" constant="8" id="l73-He-UGW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7T-fI-lov">
+                    <rect key="frame" x="16" y="526" width="365" height="55"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" imagePadding="10">
+                        <imageReference key="image" image="person" catalog="system" symbolScale="medium"/>
+                        <backgroundConfiguration key="background" cornerRadius="12" strokeWidth="1">
+                            <color key="backgroundColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Выберите мастера">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="Helvetica-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseForegroundColor" red="0.19192156199999999" green="0.23155710099999999" blue="0.23231044410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="selectMasterBtn:" destination="-1" eventType="touchUpInside" id="wmD-5n-A5p"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKX-CP-TFu">
+                    <rect key="frame" x="16" y="656" width="88" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="BwJ-2M-xlP"/>
+                        <constraint firstAttribute="height" constant="32" id="RcU-Ep-pVO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-dt-7eP">
+                    <rect key="frame" x="16" y="593" width="365" height="55"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="calendar" catalog="system" imagePadding="10">
+                        <backgroundConfiguration key="background" cornerRadius="12" strokeWidth="1">
+                            <color key="backgroundColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                        <attributedString key="attributedTitle">
+                            <fragment content="Выберите дату">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="Helvetica-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseForegroundColor" red="0.19192156199999999" green="0.23155710099999999" blue="0.23231044410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="selectDateActionBtn:" destination="-1" eventType="touchUpInside" id="gEc-L5-fgN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Off-80-KV1">
+                    <rect key="frame" x="112" y="656" width="17" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="vjR-uN-aUy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.99999994039999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DKX-CP-TFu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0ZC-1q-KZh"/>
+                <constraint firstItem="EjO-xx-Ylm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0nk-tT-pwi"/>
+                <constraint firstItem="wdj-Kb-txQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5Jk-BP-jpC"/>
+                <constraint firstItem="Vd1-8Z-zKw" firstAttribute="top" secondItem="a40-Hl-9RB" secondAttribute="bottom" constant="12" id="BB3-65-9DB"/>
+                <constraint firstItem="Off-80-KV1" firstAttribute="leading" secondItem="DKX-CP-TFu" secondAttribute="trailing" constant="8" symbolic="YES" id="HXf-Ik-o9U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a40-Hl-9RB" secondAttribute="trailing" constant="16" id="IkL-T5-oDU"/>
+                <constraint firstItem="EjO-xx-Ylm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OuE-8Q-sRo"/>
+                <constraint firstItem="a40-Hl-9RB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="PDK-eR-8Wy"/>
+                <constraint firstItem="a40-Hl-9RB" firstAttribute="top" secondItem="EjO-xx-Ylm" secondAttribute="bottom" constant="8" symbolic="YES" id="R0d-vL-oLQ"/>
+                <constraint firstItem="fVe-dt-7eP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UEs-Df-kPO"/>
+                <constraint firstItem="EjO-xx-Ylm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UWj-Da-ROT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O7T-fI-lov" secondAttribute="trailing" constant="12" id="Wtf-iB-tXO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fVe-dt-7eP" secondAttribute="trailing" constant="12" id="Wtv-da-FDE"/>
+                <constraint firstItem="fVe-dt-7eP" firstAttribute="width" secondItem="Vd1-8Z-zKw" secondAttribute="width" id="amN-bJ-7L4"/>
+                <constraint firstItem="fVe-dt-7eP" firstAttribute="top" secondItem="O7T-fI-lov" secondAttribute="bottom" constant="12" id="au5-XE-Gi6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fVe-dt-7eP" secondAttribute="bottom" constant="170" id="d1f-gc-a9T"/>
+                <constraint firstItem="O7T-fI-lov" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="f3L-oW-e7i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vd1-8Z-zKw" secondAttribute="trailing" constant="12" id="hum-g1-hH9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DKX-CP-TFu" secondAttribute="bottom" constant="130" id="iQ7-D1-ce0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Off-80-KV1" secondAttribute="bottom" constant="130" id="icB-jd-CNI"/>
+                <constraint firstItem="O7T-fI-lov" firstAttribute="width" secondItem="Vd1-8Z-zKw" secondAttribute="width" id="lCv-NR-XIz"/>
+                <constraint firstItem="wdj-Kb-txQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mrV-dx-wev"/>
+                <constraint firstItem="Vd1-8Z-zKw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="naQ-qH-rKB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EjO-xx-Ylm" secondAttribute="bottom" constant="444" id="p6N-Wg-aNx"/>
+                <constraint firstItem="O7T-fI-lov" firstAttribute="height" secondItem="Vd1-8Z-zKw" secondAttribute="height" id="pEt-hx-Enf"/>
+                <constraint firstItem="fVe-dt-7eP" firstAttribute="height" secondItem="Vd1-8Z-zKw" secondAttribute="height" id="ri0-nW-dO1"/>
+                <constraint firstItem="wdj-Kb-txQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="wB6-mh-yW2"/>
+                <constraint firstItem="O7T-fI-lov" firstAttribute="top" secondItem="Vd1-8Z-zKw" secondAttribute="bottom" constant="12" id="yvb-pO-bCQ"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 195" width="428" height="315"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

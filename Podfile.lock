@@ -1,0 +1,16 @@
+PODS:
+  - LiteRoute (2.1.21)
+
+DEPENDENCIES:
+  - LiteRoute
+
+SPEC REPOS:
+  trunk:
+    - LiteRoute
+
+SPEC CHECKSUMS:
+  LiteRoute: 0de115c90e3d8927ba8ae039f13a3b8a41a1ead5
+
+PODFILE CHECKSUM: 4a3c573968ea8ad3df298a064be4834eda425a13
+
+COCOAPODS: 1.11.3

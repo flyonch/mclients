@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccseccVC" customModule="MyClient" customModuleProvider="target">
+            <connections>
+                <outlet property="backBtn" destination="GWv-Bk-ewz" id="bzb-C3-Upy"/>
+                <outlet property="goMyAppoint" destination="cY1-in-qMz" id="oZb-yQ-gTP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewGrBtn" destination="mXH-eM-axI" id="5Yu-IE-cAW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mailSucc" translatesAutoresizingMaskIntoConstraints="NO" id="o3R-am-0bq">
+                    <rect key="frame" x="75" y="152" width="243" height="235"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="243" id="Y2c-Ck-a0y"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXH-eM-axI">
+                    <rect key="frame" x="16" y="537" width="361" height="151"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWv-Bk-ewz">
+                            <rect key="frame" x="8" y="83" width="345" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="9Wb-g0-B4t"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Закрыть">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="backgroundColor" red="0.090539552270000004" green="0.36123856900000001" blue="0.29705888029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="strokeColor" red="0.96254128220000001" green="0.96254128220000001" blue="0.96254128220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <color key="baseBackgroundColor" red="0.090539552270000004" green="0.36123856900000001" blue="0.29705888029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="closeActionBtn:" destination="-1" eventType="touchUpInside" id="bMk-Wf-UON"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY1-in-qMz">
+                            <rect key="frame" x="8" y="14" width="345" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="Bep-WH-qIX"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Перейти к &quot;Мои записи&quot;">
+                                <backgroundConfiguration key="background" cornerRadius="12">
+                                    <color key="backgroundColor" red="0.88749629259999996" green="0.96181303259999995" blue="0.98150569200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </backgroundConfiguration>
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="goMyAppointAction:" destination="-1" eventType="touchUpInside" id="xjb-E7-5H1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.090539552270000004" green="0.36123856900000001" blue="0.29705888029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cY1-in-qMz" firstAttribute="trailing" secondItem="GWv-Bk-ewz" secondAttribute="trailing" id="CHW-Vh-heg"/>
+                        <constraint firstItem="cY1-in-qMz" firstAttribute="leading" secondItem="GWv-Bk-ewz" secondAttribute="leading" id="M1I-27-Hnp"/>
+                        <constraint firstItem="cY1-in-qMz" firstAttribute="trailing" secondItem="mXH-eM-axI" secondAttribute="trailingMargin" id="UzY-ee-63c"/>
+                        <constraint firstItem="cY1-in-qMz" firstAttribute="leading" secondItem="mXH-eM-axI" secondAttribute="leadingMargin" id="Vja-Hk-LvO"/>
+                        <constraint firstAttribute="bottom" secondItem="GWv-Bk-ewz" secondAttribute="bottom" constant="15" id="XvC-Yc-cug"/>
+                        <constraint firstItem="GWv-Bk-ewz" firstAttribute="top" secondItem="cY1-in-qMz" secondAttribute="bottom" constant="16" id="btM-YJ-uPw"/>
+                        <constraint firstItem="cY1-in-qMz" firstAttribute="top" secondItem="mXH-eM-axI" secondAttribute="top" constant="14" id="d54-mF-rDo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запись добавлена!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJu-vu-oZP">
+                    <rect key="frame" x="54" y="395" width="285" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="g1G-X4-Tpn"/>
+                        <constraint firstAttribute="width" constant="285" id="lSA-og-6W3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы успешно записались к мастеру! Подробная информация в разделе &quot;Мои записи&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPI-wi-usF">
+                    <rect key="frame" x="54" y="465" width="285" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="285" id="56K-kh-Ab8"/>
+                        <constraint firstAttribute="height" constant="61" id="biS-ny-mvb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="o3R-am-0bq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="4Ac-UV-RaE"/>
+                <constraint firstItem="fPI-wi-usF" firstAttribute="top" secondItem="oJu-vu-oZP" secondAttribute="bottom" constant="31" id="E5u-cB-a08"/>
+                <constraint firstItem="mXH-eM-axI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="FlN-if-kkL"/>
+                <constraint firstItem="oJu-vu-oZP" firstAttribute="leading" secondItem="fPI-wi-usF" secondAttribute="leading" id="H19-9D-78s"/>
+                <constraint firstItem="oJu-vu-oZP" firstAttribute="top" secondItem="o3R-am-0bq" secondAttribute="bottom" constant="8" symbolic="YES" id="Meo-9E-Z99"/>
+                <constraint firstItem="mXH-eM-axI" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="QEB-TN-Y6R"/>
+                <constraint firstItem="o3R-am-0bq" firstAttribute="centerX" secondItem="oJu-vu-oZP" secondAttribute="centerX" id="Xjc-SO-s61"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mXH-eM-axI" secondAttribute="bottom" constant="130" id="Xw8-Zx-HqV"/>
+                <constraint firstItem="mXH-eM-axI" firstAttribute="top" secondItem="fPI-wi-usF" secondAttribute="bottom" constant="11" id="Yhq-fz-fI9"/>
+                <constraint firstItem="oJu-vu-oZP" firstAttribute="trailing" secondItem="fPI-wi-usF" secondAttribute="trailing" id="mTC-BI-kXx"/>
+                <constraint firstItem="o3R-am-0bq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="93" id="qaj-oM-aEd"/>
+                <constraint firstItem="fPI-wi-usF" firstAttribute="centerX" secondItem="mXH-eM-axI" secondAttribute="centerX" id="xSk-Ct-gXH"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mailSucc" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

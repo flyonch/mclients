@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160045672A0BBF7B003C6480 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160045662A0BBF7B003C6480 /* AppCoordinator.swift */; };
+		1607E39F2A083F2200C3684D /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607E39D2A083F2200C3684D /* RegistrationVC.swift */; };
+		1607E3A02A083F2200C3684D /* RegistrationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1607E39E2A083F2200C3684D /* RegistrationVC.xib */; };
+		1607E3A22A08455700C3684D /* RegistrationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607E3A12A08455700C3684D /* RegistrationAssembler.swift */; };
+		164206992A1C997900050144 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164206982A1C997900050144 /* Alert.swift */; };
+		16454B9D2A1219A600C53981 /* AppointmentsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454B9C2A1219A600C53981 /* AppointmentsAssembler.swift */; };
+		16454BA22A1219CF00C53981 /* AppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BA02A1219CF00C53981 /* AppointmentsVC.swift */; };
+		16454BA32A1219CF00C53981 /* AppointmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16454BA12A1219CF00C53981 /* AppointmentsVC.xib */; };
+		16454BA72A121ED500C53981 /* CreateAppointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BA52A121ED500C53981 /* CreateAppointVC.swift */; };
+		16454BA82A121ED500C53981 /* CreateAppointVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16454BA62A121ED500C53981 /* CreateAppointVC.xib */; };
+		16454BAE2A12211C00C53981 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BAD2A12211C00C53981 /* HomeProtocol.swift */; };
+		16454BB02A12213600C53981 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BAF2A12213600C53981 /* HomePresenter.swift */; };
+		16454BB22A12214A00C53981 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BB12A12214A00C53981 /* HomeInteractor.swift */; };
+		16454BB42A12216600C53981 /* AppointmentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BB32A12216600C53981 /* AppointmentsProtocol.swift */; };
+		16454BB62A12217000C53981 /* AppointmentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BB52A12217000C53981 /* AppointmentsInteractor.swift */; };
+		16454BB82A1221B100C53981 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BB72A1221B100C53981 /* HomeRouter.swift */; };
+		16454BBA2A1221CD00C53981 /* AppointmentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BB92A1221CD00C53981 /* AppointmentsRouter.swift */; };
+		16454BBC2A12222200C53981 /* AppointmentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BBB2A12222200C53981 /* AppointmentsPresenter.swift */; };
+		16454BBE2A12228600C53981 /* CreateAppointAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BBD2A12228600C53981 /* CreateAppointAssembler.swift */; };
+		16454BC02A12229600C53981 /* CreateAppointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BBF2A12229600C53981 /* CreateAppointProtocol.swift */; };
+		16454BC22A1222A000C53981 /* CreateAppointInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BC12A1222A000C53981 /* CreateAppointInteractor.swift */; };
+		16454BC42A1222AC00C53981 /* CreateAppointRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BC32A1222AC00C53981 /* CreateAppointRouter.swift */; };
+		16454BC62A1222B900C53981 /* CreateAppointPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16454BC52A1222B900C53981 /* CreateAppointPresenter.swift */; };
+		168BEB772A0E2EB7008561F8 /* AppointViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168BEB752A0E2EB7008561F8 /* AppointViewCell.swift */; };
+		168BEB782A0E2EB7008561F8 /* AppointViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 168BEB762A0E2EB7008561F8 /* AppointViewCell.xib */; };
+		169142E32A0A514B005D69C8 /* UserApiDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169142E22A0A514B005D69C8 /* UserApiDatasource.swift */; };
+		169142E52A0A51A9005D69C8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169142E42A0A51A9005D69C8 /* UserManager.swift */; };
+		16A5C0EF2A13782B00B64FCF /* SelectTimeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C0EE2A13782B00B64FCF /* SelectTimeProtocol.swift */; };
+		16A5C0F12A13797000B64FCF /* SelectTimePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C0F02A13797000B64FCF /* SelectTimePresenter.swift */; };
+		16A5C0F32A137A1C00B64FCF /* SelectTimeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C0F22A137A1C00B64FCF /* SelectTimeRouter.swift */; };
+		16A5C0F52A137A3B00B64FCF /* SelectTimeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C0F42A137A3B00B64FCF /* SelectTimeInteractor.swift */; };
+		16A5C0F82A137D2900B64FCF /* SelectMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C0F62A137D2900B64FCF /* SelectMasterVC.swift */; };
+		16A5C0F92A137D2900B64FCF /* SelectMasterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A5C0F72A137D2900B64FCF /* SelectMasterVC.xib */; };
+		16A5C1002A137EE400B64FCF /* SelectMasterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C0FF2A137EE400B64FCF /* SelectMasterAssembler.swift */; };
+		16A5C1032A13829600B64FCF /* MasterCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A5C1012A13829600B64FCF /* MasterCustomCell.swift */; };
+		16A5C1042A13829600B64FCF /* MasterCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A5C1022A13829600B64FCF /* MasterCustomCell.xib */; };
+		16AC1FB72A0E66DA00111F49 /* RiadeuItemCellCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AC1FB52A0E66DA00111F49 /* RiadeuItemCellCollection.swift */; };
+		16AC1FB82A0E66DA00111F49 /* RiadeuItemCellCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16AC1FB62A0E66DA00111F49 /* RiadeuItemCellCollection.xib */; };
+		16B3AA292A0A570800669990 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 16B3AA282A0A570800669990 /* Alamofire */; };
+		16B3AA2C2A0A641700669990 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3AA2B2A0A641700669990 /* TokenModel.swift */; };
+		16B3AA2F2A0A643B00669990 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 16B3AA2E2A0A643B00669990 /* ObjectMapper */; };
+		16B3AA322A0A683900669990 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 16B3AA312A0A683900669990 /* RxSwift */; };
+		16B3AA342A0A6D7C00669990 /* UserApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3AA332A0A6D7C00669990 /* UserApiProtocol.swift */; };
+		16B3AA362A0A7F2400669990 /* TokenErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3AA352A0A7F2400669990 /* TokenErrorModel.swift */; };
+		16BB8FF72A138579001D4ACF /* SelectServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB8FF52A138579001D4ACF /* SelectServiceVC.swift */; };
+		16BB8FF82A138579001D4ACF /* SelectServiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB8FF62A138579001D4ACF /* SelectServiceVC.xib */; };
+		16BB8FFA2A138582001D4ACF /* SelectServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB8FF92A138582001D4ACF /* SelectServiceAssembler.swift */; };
+		16BB90002A138751001D4ACF /* ServiceCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB8FFE2A138751001D4ACF /* ServiceCustomCell.swift */; };
+		16BB90012A138751001D4ACF /* ServiceCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB8FFF2A138751001D4ACF /* ServiceCustomCell.xib */; };
+		16BB90062A138BD8001D4ACF /* SuccseccVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB90042A138BD8001D4ACF /* SuccseccVC.swift */; };
+		16BB90072A138BD8001D4ACF /* SuccseccVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB90052A138BD8001D4ACF /* SuccseccVC.xib */; };
+		16BB90092A138E33001D4ACF /* SuccseccAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB90082A138E33001D4ACF /* SuccseccAssembler.swift */; };
+		16BB900D2A139325001D4ACF /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB900C2A139325001D4ACF /* ServiceModel.swift */; };
+		16BB900F2A13933E001D4ACF /* ServiceApiDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB900E2A13933E001D4ACF /* ServiceApiDatasource.swift */; };
+		16BB90132A14EDBD001D4ACF /* CustomTimeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB90112A14EDBD001D4ACF /* CustomTimeItemCell.swift */; };
+		16BB90142A14EDBD001D4ACF /* CustomTimeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB90122A14EDBD001D4ACF /* CustomTimeItemCell.xib */; };
+		16BB90182A179686001D4ACF /* MyAppointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB90162A179686001D4ACF /* MyAppointVC.swift */; };
+		16BB90192A179686001D4ACF /* MyAppointVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB90172A179686001D4ACF /* MyAppointVC.xib */; };
+		16BB901D2A179784001D4ACF /* MyAppointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB901B2A179784001D4ACF /* MyAppointCell.swift */; };
+		16BB901E2A179784001D4ACF /* MyAppointCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB901C2A179784001D4ACF /* MyAppointCell.xib */; };
+		16BB90202A17A3BA001D4ACF /* MyAppointAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB901F2A17A3BA001D4ACF /* MyAppointAssembler.swift */; };
+		16BD853D2A0A31FD00B30052 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD853C2A0A31FD00B30052 /* RegistrationPresenter.swift */; };
+		16BD853F2A0A321300B30052 /* RegistrationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD853E2A0A321300B30052 /* RegistrationProtocol.swift */; };
+		16BD85412A0A321B00B30052 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD85402A0A321B00B30052 /* RegistrationRouter.swift */; };
+		16BD85432A0A322D00B30052 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD85422A0A322D00B30052 /* RegistrationInteractor.swift */; };
+		16BD854B2A0A381100B30052 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD85492A0A381100B30052 /* MainVC.swift */; };
+		16BD854E2A0A3B1600B30052 /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD854D2A0A3B1600B30052 /* MainAssembler.swift */; };
+		16BD85562A0A41D600B30052 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD85542A0A41D600B30052 /* HomeVC.swift */; };
+		16BD85572A0A41D600B30052 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BD85552A0A41D600B30052 /* HomeVC.xib */; };
+		16BD85592A0A41E100B30052 /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BD85582A0A41E100B30052 /* HomeAssembler.swift */; };
+		16C68BF62A0CE76C00B926F1 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C68BF52A0CE76C00B926F1 /* UserDataModel.swift */; };
+		16C68BFB2A0CF93500B926F1 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C68BFA2A0CF93500B926F1 /* UserProfile.swift */; };
+		16C7ACE82A07FE0E0059FE59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7ACE72A07FE0E0059FE59 /* AppDelegate.swift */; };
+		16C7ACEA2A07FE0E0059FE59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7ACE92A07FE0E0059FE59 /* SceneDelegate.swift */; };
+		16C7ACF22A07FE0E0059FE59 /* MyClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16C7ACF02A07FE0E0059FE59 /* MyClient.xcdatamodeld */; };
+		16C7ACF42A07FE100059FE59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C7ACF32A07FE100059FE59 /* Assets.xcassets */; };
+		16C7ACF72A07FE100059FE59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C7ACF52A07FE100059FE59 /* LaunchScreen.storyboard */; };
+		16C7AD042A07FFED0059FE59 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 16C7AD032A07FFED0059FE59 /* Swinject */; };
+		16C7AD072A0800340059FE59 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD062A0800340059FE59 /* ApplicationAssembly.swift */; };
+		16C7AD0B2A0800C10059FE59 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD092A0800C10059FE59 /* AuthViewController.swift */; };
+		16C7AD0C2A0800C10059FE59 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C7AD0A2A0800C10059FE59 /* AuthViewController.xib */; };
+		16C7AD0E2A080E890059FE59 /* AuthAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD0D2A080E890059FE59 /* AuthAssembler.swift */; };
+		16C7AD102A080ED50059FE59 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD0F2A080ED50059FE59 /* AuthPresenter.swift */; };
+		16C7AD122A080EE60059FE59 /* AuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD112A080EE60059FE59 /* AuthProtocols.swift */; };
+		16C7AD142A080EEF0059FE59 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD132A080EEF0059FE59 /* AuthRouter.swift */; };
+		16C7AD162A080EFB0059FE59 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7AD152A080EFB0059FE59 /* AuthInteractor.swift */; };
+		16C864D92A0E56350013776F /* RiadeuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C864D72A0E56350013776F /* RiadeuVC.swift */; };
+		16C864DA2A0E56350013776F /* RiadeuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C864D82A0E56350013776F /* RiadeuVC.xib */; };
+		16C864DD2A0E568E0013776F /* Rideau in Frameworks */ = {isa = PBXBuildFile; productRef = 16C864DC2A0E568E0013776F /* Rideau */; };
+		16DB62AC2A135C4900F740E7 /* SelectTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB62AA2A135C4900F740E7 /* SelectTimeVC.swift */; };
+		16DB62AD2A135C4900F740E7 /* SelectTimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DB62AB2A135C4900F740E7 /* SelectTimeVC.xib */; };
+		16DB62AF2A135C5300F740E7 /* SelectTimeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DB62AE2A135C5300F740E7 /* SelectTimeAssembler.swift */; };
+		B941D466A87727BAADDC484F /* Pods_MyClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1734E87DE3AF850BF888E693 /* Pods_MyClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		160045662A0BBF7B003C6480 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1607E39D2A083F2200C3684D /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		1607E39E2A083F2200C3684D /* RegistrationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationVC.xib; sourceTree = "<group>"; };
+		1607E3A12A08455700C3684D /* RegistrationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAssembler.swift; sourceTree = "<group>"; };
+		164206982A1C997900050144 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		16454B9C2A1219A600C53981 /* AppointmentsAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsAssembler.swift; sourceTree = "<group>"; };
+		16454BA02A1219CF00C53981 /* AppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsVC.swift; sourceTree = "<group>"; };
+		16454BA12A1219CF00C53981 /* AppointmentsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentsVC.xib; sourceTree = "<group>"; };
+		16454BA52A121ED500C53981 /* CreateAppointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointVC.swift; sourceTree = "<group>"; };
+		16454BA62A121ED500C53981 /* CreateAppointVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAppointVC.xib; sourceTree = "<group>"; };
+		16454BAD2A12211C00C53981 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		16454BAF2A12213600C53981 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		16454BB12A12214A00C53981 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		16454BB32A12216600C53981 /* AppointmentsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsProtocol.swift; sourceTree = "<group>"; };
+		16454BB52A12217000C53981 /* AppointmentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsInteractor.swift; sourceTree = "<group>"; };
+		16454BB72A1221B100C53981 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		16454BB92A1221CD00C53981 /* AppointmentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsRouter.swift; sourceTree = "<group>"; };
+		16454BBB2A12222200C53981 /* AppointmentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsPresenter.swift; sourceTree = "<group>"; };
+		16454BBD2A12228600C53981 /* CreateAppointAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointAssembler.swift; sourceTree = "<group>"; };
+		16454BBF2A12229600C53981 /* CreateAppointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointProtocol.swift; sourceTree = "<group>"; };
+		16454BC12A1222A000C53981 /* CreateAppointInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointInteractor.swift; sourceTree = "<group>"; };
+		16454BC32A1222AC00C53981 /* CreateAppointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointRouter.swift; sourceTree = "<group>"; };
+		16454BC52A1222B900C53981 /* CreateAppointPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAppointPresenter.swift; sourceTree = "<group>"; };
+		168BEB752A0E2EB7008561F8 /* AppointViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointViewCell.swift; sourceTree = "<group>"; };
+		168BEB762A0E2EB7008561F8 /* AppointViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointViewCell.xib; sourceTree = "<group>"; };
+		169142E22A0A514B005D69C8 /* UserApiDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiDatasource.swift; sourceTree = "<group>"; };
+		169142E42A0A51A9005D69C8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		16A5C0EE2A13782B00B64FCF /* SelectTimeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeProtocol.swift; sourceTree = "<group>"; };
+		16A5C0F02A13797000B64FCF /* SelectTimePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimePresenter.swift; sourceTree = "<group>"; };
+		16A5C0F22A137A1C00B64FCF /* SelectTimeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeRouter.swift; sourceTree = "<group>"; };
+		16A5C0F42A137A3B00B64FCF /* SelectTimeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeInteractor.swift; sourceTree = "<group>"; };
+		16A5C0F62A137D2900B64FCF /* SelectMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMasterVC.swift; sourceTree = "<group>"; };
+		16A5C0F72A137D2900B64FCF /* SelectMasterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectMasterVC.xib; sourceTree = "<group>"; };
+		16A5C0FF2A137EE400B64FCF /* SelectMasterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMasterAssembler.swift; sourceTree = "<group>"; };
+		16A5C1012A13829600B64FCF /* MasterCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCustomCell.swift; sourceTree = "<group>"; };
+		16A5C1022A13829600B64FCF /* MasterCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterCustomCell.xib; sourceTree = "<group>"; };
+		16AC1FB52A0E66DA00111F49 /* RiadeuItemCellCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiadeuItemCellCollection.swift; sourceTree = "<group>"; };
+		16AC1FB62A0E66DA00111F49 /* RiadeuItemCellCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RiadeuItemCellCollection.xib; sourceTree = "<group>"; };
+		16B3AA2B2A0A641700669990 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		16B3AA332A0A6D7C00669990 /* UserApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiProtocol.swift; sourceTree = "<group>"; };
+		16B3AA352A0A7F2400669990 /* TokenErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenErrorModel.swift; sourceTree = "<group>"; };
+		16BB8FF52A138579001D4ACF /* SelectServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceVC.swift; sourceTree = "<group>"; };
+		16BB8FF62A138579001D4ACF /* SelectServiceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectServiceVC.xib; sourceTree = "<group>"; };
+		16BB8FF92A138582001D4ACF /* SelectServiceAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServiceAssembler.swift; sourceTree = "<group>"; };
+		16BB8FFE2A138751001D4ACF /* ServiceCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCustomCell.swift; sourceTree = "<group>"; };
+		16BB8FFF2A138751001D4ACF /* ServiceCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCustomCell.xib; sourceTree = "<group>"; };
+		16BB90042A138BD8001D4ACF /* SuccseccVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccseccVC.swift; sourceTree = "<group>"; };
+		16BB90052A138BD8001D4ACF /* SuccseccVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccseccVC.xib; sourceTree = "<group>"; };
+		16BB90082A138E33001D4ACF /* SuccseccAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccseccAssembler.swift; sourceTree = "<group>"; };
+		16BB900C2A139325001D4ACF /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		16BB900E2A13933E001D4ACF /* ServiceApiDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApiDatasource.swift; sourceTree = "<group>"; };
+		16BB90112A14EDBD001D4ACF /* CustomTimeItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimeItemCell.swift; sourceTree = "<group>"; };
+		16BB90122A14EDBD001D4ACF /* CustomTimeItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTimeItemCell.xib; sourceTree = "<group>"; };
+		16BB90162A179686001D4ACF /* MyAppointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointVC.swift; sourceTree = "<group>"; };
+		16BB90172A179686001D4ACF /* MyAppointVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAppointVC.xib; sourceTree = "<group>"; };
+		16BB901B2A179784001D4ACF /* MyAppointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointCell.swift; sourceTree = "<group>"; };
+		16BB901C2A179784001D4ACF /* MyAppointCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAppointCell.xib; sourceTree = "<group>"; };
+		16BB901F2A17A3BA001D4ACF /* MyAppointAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointAssembler.swift; sourceTree = "<group>"; };
+		16BD853C2A0A31FD00B30052 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		16BD853E2A0A321300B30052 /* RegistrationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationProtocol.swift; sourceTree = "<group>"; };
+		16BD85402A0A321B00B30052 /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		16BD85422A0A322D00B30052 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		16BD85492A0A381100B30052 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		16BD854D2A0A3B1600B30052 /* MainAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		16BD85542A0A41D600B30052 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		16BD85552A0A41D600B30052 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		16BD85582A0A41E100B30052 /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
+		16C68BF52A0CE76C00B926F1 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		16C68BFA2A0CF93500B926F1 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		16C7ACE42A07FE0E0059FE59 /* MyClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C7ACE72A07FE0E0059FE59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16C7ACE92A07FE0E0059FE59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16C7ACF12A07FE0E0059FE59 /* MyClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyClient.xcdatamodel; sourceTree = "<group>"; };
+		16C7ACF32A07FE100059FE59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C7ACF62A07FE100059FE59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16C7ACF82A07FE100059FE59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C7AD062A0800340059FE59 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		16C7AD092A0800C10059FE59 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		16C7AD0A2A0800C10059FE59 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		16C7AD0D2A080E890059FE59 /* AuthAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembler.swift; sourceTree = "<group>"; };
+		16C7AD0F2A080ED50059FE59 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		16C7AD112A080EE60059FE59 /* AuthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocols.swift; sourceTree = "<group>"; };
+		16C7AD132A080EEF0059FE59 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		16C7AD152A080EFB0059FE59 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		16C864D72A0E56350013776F /* RiadeuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiadeuVC.swift; sourceTree = "<group>"; };
+		16C864D82A0E56350013776F /* RiadeuVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RiadeuVC.xib; sourceTree = "<group>"; };
+		16DB62AA2A135C4900F740E7 /* SelectTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeVC.swift; sourceTree = "<group>"; };
+		16DB62AB2A135C4900F740E7 /* SelectTimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTimeVC.xib; sourceTree = "<group>"; };
+		16DB62AE2A135C5300F740E7 /* SelectTimeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeAssembler.swift; sourceTree = "<group>"; };
+		1734E87DE3AF850BF888E693 /* Pods_MyClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBE6B32507264A5AB8AD919 /* Pods-MyClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClient.release.xcconfig"; path = "Target Support Files/Pods-MyClient/Pods-MyClient.release.xcconfig"; sourceTree = "<group>"; };
+		9FAF1F44A3926C7AE94E4F38 /* Pods-MyClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyClient.debug.xcconfig"; path = "Target Support Files/Pods-MyClient/Pods-MyClient.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C7ACE12A07FE0E0059FE59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B3AA2F2A0A643B00669990 /* ObjectMapper in Frameworks */,
+				16B3AA292A0A570800669990 /* Alamofire in Frameworks */,
+				16B3AA322A0A683900669990 /* RxSwift in Frameworks */,
+				16C7AD042A07FFED0059FE59 /* Swinject in Frameworks */,
+				16C864DD2A0E568E0013776F /* Rideau in Frameworks */,
+				B941D466A87727BAADDC484F /* Pods_MyClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1607E39B2A0837EF00C3684D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				169142E42A0A51A9005D69C8 /* UserManager.swift */,
+				16C68BFA2A0CF93500B926F1 /* UserProfile.swift */,
+				164206982A1C997900050144 /* Alert.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1607E39C2A083ED700C3684D /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				1607E39E2A083F2200C3684D /* RegistrationVC.xib */,
+				1607E39D2A083F2200C3684D /* RegistrationVC.swift */,
+				1607E3A12A08455700C3684D /* RegistrationAssembler.swift */,
+				16BD853C2A0A31FD00B30052 /* RegistrationPresenter.swift */,
+				16BD853E2A0A321300B30052 /* RegistrationProtocol.swift */,
+				16BD85402A0A321B00B30052 /* RegistrationRouter.swift */,
+				16BD85422A0A322D00B30052 /* RegistrationInteractor.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		16454B972A12191100C53981 /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				16454BA12A1219CF00C53981 /* AppointmentsVC.xib */,
+				16454BA02A1219CF00C53981 /* AppointmentsVC.swift */,
+				16454BBB2A12222200C53981 /* AppointmentsPresenter.swift */,
+				16454BB32A12216600C53981 /* AppointmentsProtocol.swift */,
+				16454BB52A12217000C53981 /* AppointmentsInteractor.swift */,
+				16454B9C2A1219A600C53981 /* AppointmentsAssembler.swift */,
+				16454BB92A1221CD00C53981 /* AppointmentsRouter.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		16454BA42A121E6100C53981 /* CreateAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				16BB90032A138BBD001D4ACF /* Succsess */,
+				16454BA62A121ED500C53981 /* CreateAppointVC.xib */,
+				16454BA52A121ED500C53981 /* CreateAppointVC.swift */,
+				16454BC52A1222B900C53981 /* CreateAppointPresenter.swift */,
+				16454BBD2A12228600C53981 /* CreateAppointAssembler.swift */,
+				16454BBF2A12229600C53981 /* CreateAppointProtocol.swift */,
+				16454BC12A1222A000C53981 /* CreateAppointInteractor.swift */,
+				16454BC32A1222AC00C53981 /* CreateAppointRouter.swift */,
+			);
+			path = CreateAppointment;
+			sourceTree = "<group>";
+		};
+		16454BAB2A121F6E00C53981 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		16454BAC2A121F7A00C53981 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		168BEB742A0E2D08008561F8 /* AppointCollectionItem */ = {
+			isa = PBXGroup;
+			children = (
+				168BEB752A0E2EB7008561F8 /* AppointViewCell.swift */,
+				168BEB762A0E2EB7008561F8 /* AppointViewCell.xib */,
+			);
+			path = AppointCollectionItem;
+			sourceTree = "<group>";
+		};
+		16A5C0ED2A13780300B64FCF /* SelectMaster */ = {
+			isa = PBXGroup;
+			children = (
+				16A5C0FA2A137D6B00B64FCF /* Cell */,
+				16A5C0F72A137D2900B64FCF /* SelectMasterVC.xib */,
+				16A5C0F62A137D2900B64FCF /* SelectMasterVC.swift */,
+				16A5C0FF2A137EE400B64FCF /* SelectMasterAssembler.swift */,
+			);
+			path = SelectMaster;
+			sourceTree = "<group>";
+		};
+		16A5C0FA2A137D6B00B64FCF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16A5C1012A13829600B64FCF /* MasterCustomCell.swift */,
+				16A5C1022A13829600B64FCF /* MasterCustomCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		16AC1FB42A0E669500111F49 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				16AC1FB52A0E66DA00111F49 /* RiadeuItemCellCollection.swift */,
+				16AC1FB62A0E66DA00111F49 /* RiadeuItemCellCollection.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		16B3AA2A2A0A640400669990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16C68BF42A0CE75B00B926F1 /* UserData */,
+				16B3AA2B2A0A641700669990 /* TokenModel.swift */,
+				16B3AA352A0A7F2400669990 /* TokenErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16BB8FF02A138539001D4ACF /* SelectService */ = {
+			isa = PBXGroup;
+			children = (
+				16BB8FFB2A1386E3001D4ACF /* CustomCell */,
+				16BB8FF62A138579001D4ACF /* SelectServiceVC.xib */,
+				16BB8FF52A138579001D4ACF /* SelectServiceVC.swift */,
+				16BB8FF92A138582001D4ACF /* SelectServiceAssembler.swift */,
+			);
+			path = SelectService;
+			sourceTree = "<group>";
+		};
+		16BB8FFB2A1386E3001D4ACF /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				16BB8FFE2A138751001D4ACF /* ServiceCustomCell.swift */,
+				16BB8FFF2A138751001D4ACF /* ServiceCustomCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		16BB90032A138BBD001D4ACF /* Succsess */ = {
+			isa = PBXGroup;
+			children = (
+				16BB90052A138BD8001D4ACF /* SuccseccVC.xib */,
+				16BB90042A138BD8001D4ACF /* SuccseccVC.swift */,
+				16BB90082A138E33001D4ACF /* SuccseccAssembler.swift */,
+			);
+			path = Succsess;
+			sourceTree = "<group>";
+		};
+		16BB900A2A1392B8001D4ACF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16BB900B2A1392C9001D4ACF /* Model */,
+				16BB900E2A13933E001D4ACF /* ServiceApiDatasource.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		16BB900B2A1392C9001D4ACF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16BB900C2A139325001D4ACF /* ServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16BB90102A14ED7A001D4ACF /* CustomTimeItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				16BB90122A14EDBD001D4ACF /* CustomTimeItemCell.xib */,
+				16BB90112A14EDBD001D4ACF /* CustomTimeItemCell.swift */,
+			);
+			path = CustomTimeItemCell;
+			sourceTree = "<group>";
+		};
+		16BB90152A179657001D4ACF /* MyAppoint */ = {
+			isa = PBXGroup;
+			children = (
+				16BB901A2A17974B001D4ACF /* AppointCell */,
+				16BB90172A179686001D4ACF /* MyAppointVC.xib */,
+				16BB90162A179686001D4ACF /* MyAppointVC.swift */,
+				16BB901F2A17A3BA001D4ACF /* MyAppointAssembler.swift */,
+			);
+			path = MyAppoint;
+			sourceTree = "<group>";
+		};
+		16BB901A2A17974B001D4ACF /* AppointCell */ = {
+			isa = PBXGroup;
+			children = (
+				16BB901C2A179784001D4ACF /* MyAppointCell.xib */,
+				16BB901B2A179784001D4ACF /* MyAppointCell.swift */,
+			);
+			path = AppointCell;
+			sourceTree = "<group>";
+		};
+		16BD85452A0A37A500B30052 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				16C7AD082A0800950059FE59 /* Login */,
+				1607E39C2A083ED700C3684D /* Registration */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		16BD85482A0A37F800B30052 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				16BD85492A0A381100B30052 /* MainVC.swift */,
+				16BD854D2A0A3B1600B30052 /* MainAssembler.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		16BD85532A0A41AC00B30052 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				16C864D62A0E560D0013776F /* RiadeuVC */,
+				168BEB742A0E2D08008561F8 /* AppointCollectionItem */,
+				16BD85552A0A41D600B30052 /* HomeVC.xib */,
+				16BD85542A0A41D600B30052 /* HomeVC.swift */,
+				16BD85582A0A41E100B30052 /* HomeAssembler.swift */,
+				16454BAD2A12211C00C53981 /* HomeProtocol.swift */,
+				16454BAF2A12213600C53981 /* HomePresenter.swift */,
+				16454BB12A12214A00C53981 /* HomeInteractor.swift */,
+				16454BB72A1221B100C53981 /* HomeRouter.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		16C68BF32A0CE59600B926F1 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				16B3AA2A2A0A640400669990 /* Model */,
+				169142E22A0A514B005D69C8 /* UserApiDatasource.swift */,
+				16B3AA332A0A6D7C00669990 /* UserApiProtocol.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		16C68BF42A0CE75B00B926F1 /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				16C68BF52A0CE76C00B926F1 /* UserDataModel.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		16C7ACDB2A07FE0E0059FE59 = {
+			isa = PBXGroup;
+			children = (
+				16C7ACE62A07FE0E0059FE59 /* MyClient */,
+				16C7ACE52A07FE0E0059FE59 /* Products */,
+				E00580427246DBA63947670F /* Pods */,
+				BB83D06EB568D6382AD8EEB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16C7ACE52A07FE0E0059FE59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C7ACE42A07FE0E0059FE59 /* MyClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C7ACE62A07FE0E0059FE59 /* MyClient */ = {
+			isa = PBXGroup;
+			children = (
+				1607E39B2A0837EF00C3684D /* Helpers */,
+				16C7ACFE2A07FE2D0059FE59 /* Application */,
+				16C7AD002A07FE990059FE59 /* API */,
+				16C7ACFF2A07FE440059FE59 /* Resources */,
+				16C7AD012A07FEEE0059FE59 /* Modules */,
+			);
+			path = MyClient;
+			sourceTree = "<group>";
+		};
+		16C7ACFE2A07FE2D0059FE59 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				16C7AD052A0800190059FE59 /* Assembly */,
+				16C7ACE72A07FE0E0059FE59 /* AppDelegate.swift */,
+				16C7ACE92A07FE0E0059FE59 /* SceneDelegate.swift */,
+				160045662A0BBF7B003C6480 /* AppCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		16C7ACFF2A07FE440059FE59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16C7ACF32A07FE100059FE59 /* Assets.xcassets */,
+				16C7ACF52A07FE100059FE59 /* LaunchScreen.storyboard */,
+				16C7ACF82A07FE100059FE59 /* Info.plist */,
+				16C7ACF02A07FE0E0059FE59 /* MyClient.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		16C7AD002A07FE990059FE59 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				16C68BF32A0CE59600B926F1 /* User */,
+				16BB900A2A1392B8001D4ACF /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		16C7AD012A07FEEE0059FE59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				16BB90152A179657001D4ACF /* MyAppoint */,
+				16BB8FF02A138539001D4ACF /* SelectService */,
+				16A5C0ED2A13780300B64FCF /* SelectMaster */,
+				16DB62A92A135C2600F740E7 /* SelectTime */,
+				16454B972A12191100C53981 /* Appointments */,
+				16BD85452A0A37A500B30052 /* Auth */,
+				16454BA42A121E6100C53981 /* CreateAppointment */,
+				16BD85532A0A41AC00B30052 /* HomePage */,
+				16BD85482A0A37F800B30052 /* MainTabBar */,
+				16454BAB2A121F6E00C53981 /* MyProfile */,
+				16454BAC2A121F7A00C53981 /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		16C7AD052A0800190059FE59 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				16C7AD062A0800340059FE59 /* ApplicationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		16C7AD082A0800950059FE59 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				16C7AD0A2A0800C10059FE59 /* AuthViewController.xib */,
+				16C7AD092A0800C10059FE59 /* AuthViewController.swift */,
+				16C7AD0D2A080E890059FE59 /* AuthAssembler.swift */,
+				16C7AD0F2A080ED50059FE59 /* AuthPresenter.swift */,
+				16C7AD112A080EE60059FE59 /* AuthProtocols.swift */,
+				16C7AD132A080EEF0059FE59 /* AuthRouter.swift */,
+				16C7AD152A080EFB0059FE59 /* AuthInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		16C864D62A0E560D0013776F /* RiadeuVC */ = {
+			isa = PBXGroup;
+			children = (
+				16AC1FB42A0E669500111F49 /* CategoryCell */,
+				16C864D82A0E56350013776F /* RiadeuVC.xib */,
+				16C864D72A0E56350013776F /* RiadeuVC.swift */,
+			);
+			path = RiadeuVC;
+			sourceTree = "<group>";
+		};
+		16DB62A92A135C2600F740E7 /* SelectTime */ = {
+			isa = PBXGroup;
+			children = (
+				16BB90102A14ED7A001D4ACF /* CustomTimeItemCell */,
+				16DB62AB2A135C4900F740E7 /* SelectTimeVC.xib */,
+				16DB62AA2A135C4900F740E7 /* SelectTimeVC.swift */,
+				16DB62AE2A135C5300F740E7 /* SelectTimeAssembler.swift */,
+				16A5C0EE2A13782B00B64FCF /* SelectTimeProtocol.swift */,
+				16A5C0F02A13797000B64FCF /* SelectTimePresenter.swift */,
+				16A5C0F22A137A1C00B64FCF /* SelectTimeRouter.swift */,
+				16A5C0F42A137A3B00B64FCF /* SelectTimeInteractor.swift */,
+			);
+			path = SelectTime;
+			sourceTree = "<group>";
+		};
+		BB83D06EB568D6382AD8EEB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1734E87DE3AF850BF888E693 /* Pods_MyClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E00580427246DBA63947670F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FAF1F44A3926C7AE94E4F38 /* Pods-MyClient.debug.xcconfig */,
+				5BBE6B32507264A5AB8AD919 /* Pods-MyClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C7ACE32A07FE0E0059FE59 /* MyClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C7ACFB2A07FE100059FE59 /* Build configuration list for PBXNativeTarget "MyClient" */;
+			buildPhases = (
+				EB0A6A370976B0F80D1FA901 /* [CP] Check Pods Manifest.lock */,
+				16C7ACE02A07FE0E0059FE59 /* Sources */,
+				16C7ACE12A07FE0E0059FE59 /* Frameworks */,
+				16C7ACE22A07FE0E0059FE59 /* Resources */,
+				F157AAB0B2C1E700EEBC7360 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyClient;
+			packageProductDependencies = (
+				16C7AD032A07FFED0059FE59 /* Swinject */,
+				16B3AA282A0A570800669990 /* Alamofire */,
+				16B3AA2E2A0A643B00669990 /* ObjectMapper */,
+				16B3AA312A0A683900669990 /* RxSwift */,
+				16C864DC2A0E568E0013776F /* Rideau */,
+			);
+			productName = MyClient;
+			productReference = 16C7ACE42A07FE0E0059FE59 /* MyClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C7ACDC2A07FE0E0059FE59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					16C7ACE32A07FE0E0059FE59 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 16C7ACDF2A07FE0E0059FE59 /* Build configuration list for PBXProject "MyClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C7ACDB2A07FE0E0059FE59;
+			packageReferences = (
+				16C7AD022A07FFED0059FE59 /* XCRemoteSwiftPackageReference "Swinject" */,
+				16B3AA272A0A570800669990 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				16B3AA2D2A0A643B00669990 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				16B3AA302A0A683900669990 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				16C864DB2A0E568E0013776F /* XCRemoteSwiftPackageReference "Rideau" */,
+			);
+			productRefGroup = 16C7ACE52A07FE0E0059FE59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C7ACE32A07FE0E0059FE59 /* MyClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C7ACE22A07FE0E0059FE59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16DB62AD2A135C4900F740E7 /* SelectTimeVC.xib in Resources */,
+				16BD85572A0A41D600B30052 /* HomeVC.xib in Resources */,
+				16BB8FF82A138579001D4ACF /* SelectServiceVC.xib in Resources */,
+				16454BA32A1219CF00C53981 /* AppointmentsVC.xib in Resources */,
+				16BB90072A138BD8001D4ACF /* SuccseccVC.xib in Resources */,
+				16C7ACF72A07FE100059FE59 /* LaunchScreen.storyboard in Resources */,
+				16A5C0F92A137D2900B64FCF /* SelectMasterVC.xib in Resources */,
+				16AC1FB82A0E66DA00111F49 /* RiadeuItemCellCollection.xib in Resources */,
+				16BB90142A14EDBD001D4ACF /* CustomTimeItemCell.xib in Resources */,
+				16BB901E2A179784001D4ACF /* MyAppointCell.xib in Resources */,
+				16A5C1042A13829600B64FCF /* MasterCustomCell.xib in Resources */,
+				16C7ACF42A07FE100059FE59 /* Assets.xcassets in Resources */,
+				16BB90012A138751001D4ACF /* ServiceCustomCell.xib in Resources */,
+				16BB90192A179686001D4ACF /* MyAppointVC.xib in Resources */,
+				16C7AD0C2A0800C10059FE59 /* AuthViewController.xib in Resources */,
+				16454BA82A121ED500C53981 /* CreateAppointVC.xib in Resources */,
+				168BEB782A0E2EB7008561F8 /* AppointViewCell.xib in Resources */,
+				1607E3A02A083F2200C3684D /* RegistrationVC.xib in Resources */,
+				16C864DA2A0E56350013776F /* RiadeuVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB0A6A370976B0F80D1FA901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F157AAB0B2C1E700EEBC7360 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyClient/Pods-MyClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyClient/Pods-MyClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyClient/Pods-MyClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C7ACE02A07FE0E0059FE59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16454BBE2A12228600C53981 /* CreateAppointAssembler.swift in Sources */,
+				16C7AD0B2A0800C10059FE59 /* AuthViewController.swift in Sources */,
+				16454BB22A12214A00C53981 /* HomeInteractor.swift in Sources */,
+				16C68BFB2A0CF93500B926F1 /* UserProfile.swift in Sources */,
+				16B3AA342A0A6D7C00669990 /* UserApiProtocol.swift in Sources */,
+				16454BB62A12217000C53981 /* AppointmentsInteractor.swift in Sources */,
+				16BD85592A0A41E100B30052 /* HomeAssembler.swift in Sources */,
+				16BB8FF72A138579001D4ACF /* SelectServiceVC.swift in Sources */,
+				1607E39F2A083F2200C3684D /* RegistrationVC.swift in Sources */,
+				1607E3A22A08455700C3684D /* RegistrationAssembler.swift in Sources */,
+				160045672A0BBF7B003C6480 /* AppCoordinator.swift in Sources */,
+				16B3AA2C2A0A641700669990 /* TokenModel.swift in Sources */,
+				16BB90132A14EDBD001D4ACF /* CustomTimeItemCell.swift in Sources */,
+				16BB90062A138BD8001D4ACF /* SuccseccVC.swift in Sources */,
+				16C7AD102A080ED50059FE59 /* AuthPresenter.swift in Sources */,
+				168BEB772A0E2EB7008561F8 /* AppointViewCell.swift in Sources */,
+				16A5C0F32A137A1C00B64FCF /* SelectTimeRouter.swift in Sources */,
+				16454BB42A12216600C53981 /* AppointmentsProtocol.swift in Sources */,
+				16C7AD072A0800340059FE59 /* ApplicationAssembly.swift in Sources */,
+				16A5C1002A137EE400B64FCF /* SelectMasterAssembler.swift in Sources */,
+				16BB900F2A13933E001D4ACF /* ServiceApiDatasource.swift in Sources */,
+				16454BA22A1219CF00C53981 /* AppointmentsVC.swift in Sources */,
+				16C7AD0E2A080E890059FE59 /* AuthAssembler.swift in Sources */,
+				16BD853F2A0A321300B30052 /* RegistrationProtocol.swift in Sources */,
+				16C7ACE82A07FE0E0059FE59 /* AppDelegate.swift in Sources */,
+				16BD853D2A0A31FD00B30052 /* RegistrationPresenter.swift in Sources */,
+				16C7AD122A080EE60059FE59 /* AuthProtocols.swift in Sources */,
+				16454BB02A12213600C53981 /* HomePresenter.swift in Sources */,
+				16C864D92A0E56350013776F /* RiadeuVC.swift in Sources */,
+				16C7AD162A080EFB0059FE59 /* AuthInteractor.swift in Sources */,
+				16454BC22A1222A000C53981 /* CreateAppointInteractor.swift in Sources */,
+				16454BB82A1221B100C53981 /* HomeRouter.swift in Sources */,
+				16AC1FB72A0E66DA00111F49 /* RiadeuItemCellCollection.swift in Sources */,
+				16454BC62A1222B900C53981 /* CreateAppointPresenter.swift in Sources */,
+				16C68BF62A0CE76C00B926F1 /* UserDataModel.swift in Sources */,
+				16C7ACF22A07FE0E0059FE59 /* MyClient.xcdatamodeld in Sources */,
+				169142E32A0A514B005D69C8 /* UserApiDatasource.swift in Sources */,
+				16A5C0F82A137D2900B64FCF /* SelectMasterVC.swift in Sources */,
+				16454BC42A1222AC00C53981 /* CreateAppointRouter.swift in Sources */,
+				16C7AD142A080EEF0059FE59 /* AuthRouter.swift in Sources */,
+				16B3AA362A0A7F2400669990 /* TokenErrorModel.swift in Sources */,
+				16A5C0F52A137A3B00B64FCF /* SelectTimeInteractor.swift in Sources */,
+				16A5C0F12A13797000B64FCF /* SelectTimePresenter.swift in Sources */,
+				16BD85432A0A322D00B30052 /* RegistrationInteractor.swift in Sources */,
+				16C7ACEA2A07FE0E0059FE59 /* SceneDelegate.swift in Sources */,
+				16BB90002A138751001D4ACF /* ServiceCustomCell.swift in Sources */,
+				16454BAE2A12211C00C53981 /* HomeProtocol.swift in Sources */,
+				16DB62AC2A135C4900F740E7 /* SelectTimeVC.swift in Sources */,
+				16BD854E2A0A3B1600B30052 /* MainAssembler.swift in Sources */,
+				16454BC02A12229600C53981 /* CreateAppointProtocol.swift in Sources */,
+				16DB62AF2A135C5300F740E7 /* SelectTimeAssembler.swift in Sources */,
+				16454BA72A121ED500C53981 /* CreateAppointVC.swift in Sources */,
+				16454BBA2A1221CD00C53981 /* AppointmentsRouter.swift in Sources */,
+				16A5C1032A13829600B64FCF /* MasterCustomCell.swift in Sources */,
+				164206992A1C997900050144 /* Alert.swift in Sources */,
+				16454B9D2A1219A600C53981 /* AppointmentsAssembler.swift in Sources */,
+				16BB900D2A139325001D4ACF /* ServiceModel.swift in Sources */,
+				16BB90182A179686001D4ACF /* MyAppointVC.swift in Sources */,
+				16BD85562A0A41D600B30052 /* HomeVC.swift in Sources */,
+				16BD85412A0A321B00B30052 /* RegistrationRouter.swift in Sources */,
+				169142E52A0A51A9005D69C8 /* UserManager.swift in Sources */,
+				16BB8FFA2A138582001D4ACF /* SelectServiceAssembler.swift in Sources */,
+				16BB90202A17A3BA001D4ACF /* MyAppointAssembler.swift in Sources */,
+				16BD854B2A0A381100B30052 /* MainVC.swift in Sources */,
+				16A5C0EF2A13782B00B64FCF /* SelectTimeProtocol.swift in Sources */,
+				16454BBC2A12222200C53981 /* AppointmentsPresenter.swift in Sources */,
+				16BB90092A138E33001D4ACF /* SuccseccAssembler.swift in Sources */,
+				16BB901D2A179784001D4ACF /* MyAppointCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		16C7ACF52A07FE100059FE59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C7ACF62A07FE100059FE59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C7ACF92A07FE100059FE59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16C7ACFA2A07FE100059FE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C7ACFC2A07FE100059FE59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAF1F44A3926C7AE94E4F38 /* Pods-MyClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N8T6YFS367;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyClient/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flyonch.MyClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16C7ACFD2A07FE100059FE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BBE6B32507264A5AB8AD919 /* Pods-MyClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N8T6YFS367;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyClient/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flyonch.MyClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C7ACDF2A07FE0E0059FE59 /* Build configuration list for PBXProject "MyClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C7ACF92A07FE100059FE59 /* Debug */,
+				16C7ACFA2A07FE100059FE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C7ACFB2A07FE100059FE59 /* Build configuration list for PBXNativeTarget "MyClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C7ACFC2A07FE100059FE59 /* Debug */,
+				16C7ACFD2A07FE100059FE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		16B3AA272A0A570800669990 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		16B3AA2D2A0A643B00669990 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		16B3AA302A0A683900669990 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		16C7AD022A07FFED0059FE59 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		16C864DB2A0E568E0013776F /* XCRemoteSwiftPackageReference "Rideau" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/Rideau";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		16B3AA282A0A570800669990 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16B3AA272A0A570800669990 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		16B3AA2E2A0A643B00669990 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16B3AA2D2A0A643B00669990 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		16B3AA312A0A683900669990 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16B3AA302A0A683900669990 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		16C7AD032A07FFED0059FE59 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16C7AD022A07FFED0059FE59 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		16C864DC2A0E568E0013776F /* Rideau */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16C864DB2A0E568E0013776F /* XCRemoteSwiftPackageReference "Rideau" */;
+			productName = Rideau;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		16C7ACF02A07FE0E0059FE59 /* MyClient.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				16C7ACF12A07FE0E0059FE59 /* MyClient.xcdatamodel */,
+			);
+			currentVersion = 16C7ACF12A07FE0E0059FE59 /* MyClient.xcdatamodel */;
+			path = MyClient.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 16C7ACDC2A07FE0E0059FE59 /* Project object */;
+}
